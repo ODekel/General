@@ -6,11 +6,6 @@ Timer::Timer() : beginnig{ std::chrono::high_resolution_clock::now() }
 }
 
 
-Timer::~Timer()
-{
-}
-
-
 void Timer::Reset()
 {
     this->beginnig = std::chrono::high_resolution_clock::now();

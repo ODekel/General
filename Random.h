@@ -10,7 +10,6 @@ private:
     std::mt19937 mt{ std::random_device{}() };
 public:
     Random();
-    ~Random();
     int Next(int from, int to);
     int Next(int to);
 };
@@ -22,7 +21,6 @@ private:
     std::mt19937 mt{ std::random_device{}() };
 public:
     RandomDouble();
-    ~RandomDouble();
     double Next(double from, double to);
     double Next(double to);
 };
@@ -36,7 +34,6 @@ private:
 public:
     RangedRandom(int from, int to);
     RangedRandom(int to);
-    ~RangedRandom();
     int Next();
 };
 
@@ -49,7 +46,6 @@ private:
 public:
     RangedRandomDouble(double from, double to);
     RangedRandomDouble(double to);
-    ~RangedRandomDouble();
     double Next();
 };
 

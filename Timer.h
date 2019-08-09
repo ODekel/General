@@ -9,7 +9,6 @@ private:
     std::chrono::time_point<std::chrono::high_resolution_clock> beginnig;
 public:
     Timer();
-    ~Timer();
     void Reset();
     double elapsed() const;
 };

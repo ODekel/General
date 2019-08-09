@@ -6,11 +6,6 @@ Random::Random()
 }
 
 
-Random::~Random()
-{
-}
-
-
 int Random::Next(int from, int to)
 {
     return std::uniform_int_distribution<>{ from, to }(this->mt);
@@ -27,11 +22,6 @@ int Random::Next(int to)
 
 
 RandomDouble::RandomDouble()
-{
-}
-
-
-RandomDouble::~RandomDouble()
 {
 }
 
@@ -60,11 +50,6 @@ RangedRandom::RangedRandom(int to) : rnd{ 0, to }
 }
 
 
-RangedRandom::~RangedRandom()
-{
-}
-
-
 int RangedRandom::Next()
 {
     return this->rnd(this->mt);
@@ -80,11 +65,6 @@ RangedRandomDouble::RangedRandomDouble(double from, double to) :rnd{ from, to }
 
 
 RangedRandomDouble::RangedRandomDouble(double to) : rnd{ 0.0, to }
-{
-}
-
-
-RangedRandomDouble::~RangedRandomDouble()
 {
 }
 
